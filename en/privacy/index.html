@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy – ADHDone</title>
+<link rel="icon" href="../../logo.png">
+<style>
+:root {
+  --bg: #f2f2f7; --card: #ffffff; --text: #1c1c1e; --muted: #6c6c70;
+  --line: #d1d1d6; --accent: #2f6cc0; --button: #1c1c1e; --button-text: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000; --card: #1c1c1e; --text: #f2f2f7; --muted: #98989f;
+    --line: #38383a; --accent: #4f8fe6; --button: #f2f2f7; --button-text: #000;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Long German words ("Datenschutzerklärung") break instead of overflowing. */
+  overflow-wrap: break-word; hyphens: auto;
+}
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 24px; }
+.card { background: var(--card); border-radius: 18px; padding: 24px 20px; }
+.hero { text-align: center; padding-top: 24px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 18px 0 6px; letter-spacing: -0.4px; }
+.card h1 { font-size: 24px; margin-top: 0; }
+h2 { font-size: 20px; margin: 28px 0 6px; }
+h3 { font-size: 17px; margin: 18px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 20px; margin: 0 0 10px; }
+.lead { color: var(--muted); font-size: 19px; margin-bottom: 26px; }
+.button {
+  display: inline-block; background: var(--button); color: var(--button-text);
+  text-decoration: none; font-weight: 600; padding: 14px 26px; border-radius: 14px;
+}
+.features { text-align: left; margin: 30px 0 0; }
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 28px 0 40px; }
+footer a, .back { color: var(--muted); }
+a { color: var(--accent); }
+.back { display: inline-block; margin-bottom: 14px; font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../../en/">← ADHDone</a>
+<div class="card">
+<h1>Privacy Policy for ADHDone</h1>
+<p>As of: October 18, 2026</p>
+<p>This is a translation of the German privacy policy (Datenschutzerklärung). If the two differ, the German version applies.</p>
+<h2>1. Who is responsible?</h2>
+<p>Operantis UG (haftungsbeschränkt)<br>
+Martinstraße 4<br>
+40223 Düsseldorf, Germany<br>
+Represented by its managing director Robert Aubel<br>
+Email: robert.aubel@operantis.net</p>
+<h2>2. The essentials in brief</h2>
+<ul><li>ADHDone stores what you enter yourself, and only what the app needs to work.</li><li>There are no ads, no tracking and no analytics tools.</li><li>We don&#x27;t sell any data. It only goes to the service providers named below, without whom the app wouldn&#x27;t run.</li><li>You can delete your account in the app at any time (Settings → Account → Delete account). Then everything is gone.</li><li>The app is meant for people aged 16 and older.</li></ul>
+<h2>3. What data we process</h2>
+<h3>Your account</h3>
+<p>Email address and password (the password only as an encrypted hash). If you sign in with Apple, Apple gives us an identifier and your email address, or, if you choose, an anonymous forwarding address from Apple. If you sign in with Google, Google gives us your email address, your name and your profile picture.</p>
+<p>Purpose: signing in and protecting your account. Legal basis: Art. 6(1)(b) GDPR (use of the app).</p>
+<h3>Your tasks and settings</h3>
+<p>Tasks (title, note, date, time, priority, icon, estimated duration, when done), the shopping list and your settings (for example reminder times, quiet hours, time zone, language).</p>
+<p>Purpose: the app&#x27;s features and keeping app and server in sync. Legal basis: Art. 6(1)(b) GDPR.</p>
+<h3>Your meds (health data)</h3>
+<p>Names, strength, form, dose times, schedule, supply and the doses you take. This is health data. We only store it with your explicit consent, which the app asks for before your first meds (Art. 9(2)(a) and Art. 6(1)(a) GDPR).</p>
+<p>You can withdraw your consent at any time with effect for the future: Settings → Meds → Withdraw consent. We then delete all your meds and their history. Meds are never shared with your buddy.</p>
+<h3>Buddy</h3>
+<p>Your username, requests and the connection to your buddy. Also the tasks you choose to share yourself (title, date, time), and how many tasks you have finished today. For buddy notifications we store your iPhone&#x27;s push token and your time zone.</p>
+<p>If you block someone, we store that and the person&#x27;s username. If you report someone, we store the report with its reason, the username and a copy of the tasks the person is sharing with you at that moment, so we can review the report.</p>
+<p>Legal basis: Art. 6(1)(b) GDPR; for reports and blocks also Art. 6(1)(f) GDPR (protecting all users).</p>
+<h3>What stays on your iPhone</h3>
+<ul><li>Voice input: Apple&#x27;s speech recognition, first right on the iPhone. If that isn&#x27;t available for your language on your device, Apple processes the recording on its own servers; Apple&#x27;s privacy policy applies to that. We only receive the recognized text as a task.</li><li>Apple Intelligence (understanding sentences, choosing icons) runs only on the iPhone. Nothing goes to us or to third parties.</li><li>The app plans reminders on the iPhone as local notifications.</li><li>The widget and Siri read a copy of your tasks on the iPhone.</li><li>A copy of your data stays on the iPhone so the app also works offline. It is deleted when you sign out.</li></ul>
+<h2>4. Who else receives your data</h2>
+<ul><li>Supabase Pte. Ltd. (Singapore): database and sign-in. Your data is stored in a data center in Frankfurt am Main, Germany (Amazon Web Services). We have a data processing agreement with Supabase. Access from outside the EU can&#x27;t be entirely ruled out; it is safeguarded by the EU Standard Contractual Clauses (Art. 46 GDPR).</li><li>Brevo (Sendinblue SAS, France): sends the emails to confirm your email address and for a new password (your email address and the content of the email).</li><li>Apple (Apple Distribution International Ltd., Ireland): Sign in with Apple, notifications to your buddy (Apple Push Notification service), speech recognition and TestFlight.</li><li>Google (Google Ireland Ltd., Ireland): only if you use &quot;Sign in with Google&quot;.</li><li>GitHub, Inc. (USA): hosts the website adhdone.de (GitHub Pages, see section 8).</li></ul>
+<h2>5. How long we store data</h2>
+<p>As long as your account exists. When you delete a task, it is gone for you right away. In the database it is first only marked as deleted, so the deletion reaches all your devices, and it is removed for good with your account at the latest.</p>
+<p>When you delete your account, we immediately delete everything that belongs to it. We keep reports as long as we need them for review.</p>
+<h2>6. Your rights</h2>
+<p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object (Art. 21). You can withdraw consent at any time (Art. 7(3)). Just write to us at the email address above.</p>
+<p>You can also lodge a complaint with a data protection supervisory authority, for example the one where you live.</p>
+<h2>7. Security</h2>
+<p>All connections are encrypted (TLS). Every row in the database belongs to exactly one account, and only that account can read it (Row Level Security). Your buddy only sees what you choose to share.</p>
+<h2>8. Website adhdone.de</h2>
+<p>The website sets no cookies and uses no tracking. It is hosted on GitHub Pages. When you visit it, GitHub stores technically necessary data (IP address, time, page visited) in server logs to run the site securely. This may involve a transfer to the USA; GitHub safeguards it through the EU-US Data Privacy Framework and the EU Standard Contractual Clauses. Legal basis: Art. 6(1)(f) GDPR (secure operation of the website).</p>
+<h2>9. Changes</h2>
+<p>When the app changes, we update this policy. The current version in the app and at adhdone.de/en/privacy applies.</p>
+</div>
+</main>
+<footer>
+  <a href="../../en/privacy/">Privacy</a> · <a href="../../en/imprint/">Legal notice</a> · <a href="../../">Deutsch</a>
+</footer>
+</body>
+</html>

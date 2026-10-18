@@ -48,21 +48,31 @@ a { color: var(--accent); }
 <body>
 <main>
 <div class="card" style="text-align:center">
-  <h1>Fast geschafft</h1>
+  <h1 id="title">Fast geschafft</h1>
   <p id="hint">ADHDone öffnet sich gleich. Fragt dein iPhone, tippe auf „Öffnen“.</p>
   <p><a class="button" id="open" href="secondbrain://auth-callback">ADHDone öffnen</a></p>
-  <p class="lead" style="font-size:15px;margin-top:18px">Kein iPhone zur Hand? Deine E-Mail-Adresse ist trotzdem bestätigt:
+  <p class="lead" id="away" style="font-size:15px;margin-top:18px">Kein iPhone zur Hand? Deine E-Mail-Adresse ist trotzdem bestätigt:
   Melde dich einfach in der App an. Einen Link für ein neues Passwort öffnest du bitte auf dem iPhone.</p>
 </div>
 <script>
+  // English for browsers that don't prefer German.
+  if (!/^de/i.test(navigator.language || '')) {
+    document.documentElement.lang = 'en';
+    document.getElementById('title').textContent = 'Almost there';
+    document.getElementById('hint').textContent =
+      'ADHDone opens in a moment. If your iPhone asks, tap “Open”.';
+    document.getElementById('open').textContent = 'Open ADHDone';
+    document.getElementById('away').textContent =
+      'No iPhone at hand? Your email address is confirmed anyway: just sign in in the app. ' +
+      'Please open a link for a new password on your iPhone.';
+  }
   var target = 'secondbrain://auth-callback' + location.search + location.hash;
   document.getElementById('open').href = target;
   if (location.search || location.hash) location.href = target;
 </script>
 </main>
 <footer>
-  <a href="../datenschutz/">Datenschutz</a> ·
-  <a href="../impressum/">Impressum</a>
+  <a href="../datenschutz/">Datenschutz</a> · <a href="../impressum/">Impressum</a> · <a href="../en/">English</a>
 </footer>
 </body>
 </html>
